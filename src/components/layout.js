@@ -5,7 +5,6 @@ import Header from "./header"
 import Archive from './archive'
 import styled from 'styled-components'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import { Spring } from 'react-spring/renderprops'
 import "./layout.css"
 
 const MainLayout = styled.main`
@@ -35,16 +34,6 @@ const Layout = ({ children, location }) => {
     return (
         <>
             <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-
-            <Spring
-                from={{ height: 100 }} to={{ height: 200 }}
-            >
-                {styles => (
-                    <div style={{ overflow: 'hidden', ...styles }}>
-                        <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="Photo of a Computer" />
-                    </div>
-                )}
-            </Spring>
 
             <MainLayout>
                 <div>
