@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Archive from './archive'
 import styled from 'styled-components'
-import { GatsbyImage } from 'gatsby-plugin-image'
 import "./layout.css"
 
 const MainLayout = styled.main`
@@ -16,6 +15,7 @@ const MainLayout = styled.main`
 `
 
 const Layout = ({ children, location }) => {
+
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -23,7 +23,7 @@ const Layout = ({ children, location }) => {
                     title
                 }
             }
-            file(relativePath: { regex: "/background/" }) {
+            file(relativePath: { regex: "/computer/" }) {
                 childImageSharp {
                     gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
                 }
