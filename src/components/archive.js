@@ -13,6 +13,10 @@ const ArchiveList = styled.ul`
     }
 `
 
+const SideBar = styled.aside`
+    text-align: center;
+`
+
 const Archive = () => {
     const data = useStaticQuery(graphql`
     query BlogPostArchive {
@@ -34,7 +38,7 @@ const Archive = () => {
 
     return (
         <>
-            <aside>
+            <SideBar>
                 <h3>Archive</h3>
                 <ArchiveList>
                     {data.allMarkdownRemark.edges.map((edge) => (
@@ -45,7 +49,7 @@ const Archive = () => {
                         </li>
                     ))}
                 </ArchiveList>
-            </aside>
+            </SideBar>
         </>
     )
 }

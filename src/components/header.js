@@ -6,6 +6,7 @@ import styled from "styled-components"
 const HeaderContainer = styled.div`
     background: #17a2b8;    
     margin: 0 auto;
+    margin-bottom: 5rem;
 `;
 
 const Header = ({ siteTitle }) => {
