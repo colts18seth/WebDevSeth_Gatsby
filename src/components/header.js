@@ -7,6 +7,7 @@ const HeaderContainer = styled.div`
     background: #17a2b8;    
     margin: 0 auto;
     margin-bottom: 5rem;
+    border-bottom: 1px solid black;
 `;
 
 const Header = ({ siteTitle }) => {

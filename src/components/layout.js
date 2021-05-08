@@ -9,13 +9,14 @@ import "./layout.css"
 
 const MainLayout = styled.main`
     max-width: 90%;
+    min-height: calc(100vh + 80px);
     margin: 0 auto;
     display: grid;
     grid-template-columns: 6fr 1fr;
     grid-gap: 40px;
 `
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children }) => {
 
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {

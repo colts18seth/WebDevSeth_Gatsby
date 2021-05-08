@@ -5,7 +5,9 @@ const Jumbotron = styled.main`
     text-align: center;
     max-width: 650px;
     margin:0 auto;
-    border: 2px solid black;
+    padding: 1rem;
+    box-shadow: 0px 3px 10px rgba(25, 17, 34, 0.1);
+    border-radius: 4px;
     h1 {
         font-style: italic;
         font-size: 4rem;

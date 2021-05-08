@@ -9,12 +9,16 @@ const ArchiveList = styled.ul`
     a {
         font-size: 0.8rem;
         text-decoration: underline;
-        color: #524763;
+        color: #17a2b8;;
     }
 `
 
 const SideBar = styled.aside`
     text-align: center;
+    border-left: 1px solid rgba(25, 17, 34, 0.05);
+    h4{
+        margin-bottom: .5rem;
+    }
 `
 
 const Archive = () => {
@@ -27,7 +31,7 @@ const Archive = () => {
           edges {
             node {
               frontmatter {
-                          title
+                title
                 slug
               }
             }
@@ -39,7 +43,7 @@ const Archive = () => {
     return (
         <>
             <SideBar>
-                <h3>Archive</h3>
+                <h4>Recent Posts</h4>
                 <ArchiveList>
                     {data.allMarkdownRemark.edges.map((edge) => (
                         <li key={edge.node.frontmatter.slug}>
