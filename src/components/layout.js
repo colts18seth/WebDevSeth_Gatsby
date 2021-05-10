@@ -25,11 +25,6 @@ const Layout = ({ children }) => {
                     title
                 }
             }
-            file(relativePath: { regex: "/computer/" }) {
-                childImageSharp {
-                    gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
-                }
-            }
         }
   `)
 
