@@ -52,6 +52,11 @@ const Archive = () => {
                             </Link>
                         </li>
                     ))}
+                    <li key="all">
+                        <Link to={`/blogList`}>
+                            All Posts
+                        </Link>
+                    </li>
                 </ArchiveList>
             </SideBar>
         </>
