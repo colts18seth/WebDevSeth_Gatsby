@@ -9,7 +9,7 @@ import styled from 'styled-components'
 import "./layout.css"
 
 const MainLayout = styled.main`
-    max-width: 90%;
+    max-width: 1250px;
     margin: 0 auto;
     margin-bottom: 5rem;
     display: grid;
