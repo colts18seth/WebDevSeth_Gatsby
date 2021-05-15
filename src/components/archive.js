@@ -9,7 +9,7 @@ const ArchiveList = styled.ul`
     a {
         font-size: 0.8rem;
         text-decoration: underline;
-        color: #17a2b8;;
+        color: #17a2b8;
     }
 `
 

@@ -40,7 +40,7 @@ const Post = styled.article`
     .read-more {
         font-size: 0.8rem;
         text-decoration: underline;
-        color: #524763;
+        color: #17a2b8;
     }
 `
 
