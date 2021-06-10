@@ -1,5 +1,4 @@
 import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from 'styled-components'
 
 const ArchiveList = styled.ul`
@@ -22,41 +21,19 @@ const SideBar = styled.aside`
 `
 
 const Archive = () => {
-    const data = useStaticQuery(graphql`
-    query BlogPostArchive {
-        allMarkdownRemark(limit: 5, sort: {
-            order: DESC,
-                fields: [frontmatter___date]
-          }) {
-          edges {
-            node {
-              frontmatter {
-                title
-                slug
-              }
-            }
-          }
-        }
-      }
-   `)
 
     return (
         <>
             <SideBar>
-                <h4>Recent Posts</h4>
+                <h4>Helpful Sites</h4>
                 <ArchiveList>
-                    {data.allMarkdownRemark.edges.map((edge) => (
-                        <li key={edge.node.frontmatter.slug}>
-                            <Link to={`/posts${edge.node.frontmatter.slug}`}>
-                                {edge.node.frontmatter.title}
-                            </Link>
-                        </li>
-                    ))}
-                    <li key="all">
-                        <Link to={`/blogList`}>
-                            All Posts
-                        </Link>
-                    </li>
+                    <li><a href="https://www.algoexpert.io/" target="_blank">AlgoExpert</a></li>
+                    <li><a href="https://www.leveluptutorials.com/" target="_blank">LevelUpTutorials</a></li>
+                    <li><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a></li>
+                    <li><a href="https://www.leetcode.com/" target="_blank">LeetCode</a></li>
+                    <li><a href="https://www.hackerrank.com/" target="_blank">HackerRank</a></li>
+                    <li><a href="https://www.triplebyte.com/" target="_blank">Triplebyte</a></li>
+                    <li><a href="https://www.codingame.com/" target="_blank">Codingame</a></li>
                 </ArchiveList>
             </SideBar>
         </>

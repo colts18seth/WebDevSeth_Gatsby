@@ -18,14 +18,14 @@ const Jumbotron = styled.main`
     }
 `
 
-const About = ({ location }) => (
+const About = () => (
     <Jumbotron>
         <h1>Hi, I'm Seth.</h1>
         <small>- an aspiring Software Engineer</small>
         <p className="intro">
             I'm a recent coding bootcamp grad. When I started the bootcamp, I knew very
             little about web development. So, I thought it'd be cool to keep
-            a record of what I've learned. I'll continue to update this site as I learn new tech and also write blog posts about the tech I'm learning.
+            a record of what I've learned. I'll continue to update this site as I learn new tech and provide links to sites I use to learn.
         </p>
     </Jumbotron>
 );
