@@ -34,6 +34,7 @@ const Archive = () => {
                     <li><a href="https://www.hackerrank.com/" target="_blank">HackerRank</a></li>
                     <li><a href="https://www.triplebyte.com/" target="_blank">Triplebyte</a></li>
                     <li><a href="https://www.codingame.com/" target="_blank">Codingame</a></li>
+                    <li><a href="https://www.sqlzoo.net/" target="_blank">SQLZOO</a></li>
                 </ArchiveList>
             </SideBar>
         </>
